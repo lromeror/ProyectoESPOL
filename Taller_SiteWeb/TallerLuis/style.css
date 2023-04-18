@@ -1,0 +1,115 @@
+.vag {
+    height: 80px;
+    background-color: #AB1D1D;
+    color: #1FAB13;
+    margin: 0px auto;
+    padding: 1px
+}
+
+h1.center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Tiro Gurmukhi';
+    font-size: 50px;
+    margin: 7px auto;
+
+
+}
+
+.vag2 {
+
+    background-color: #E9B569;
+    margin: 0px auto;
+    padding: 5px;
+
+}
+
+h2.sub {
+    margin: 9px;
+    width: 2000px;
+    font-weight: bold;
+}
+
+.flexi {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+#txt {
+    width: 10000px;
+    margin: 0px;
+}
+
+.foto {
+    border: 1px solid #383737;
+    border-radius: 1%;
+    width: 190px;
+    height: 120px;
+}
+
+.vag3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+.barras {
+    height: 480px;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitu {
+    text-align: center;
+    font-family: "Cursive ";
+    text-decoration: underline;
+    margin: 8px;
+    font-weight: bold;
+}
+
+#imgenes {
+    width: 272px;
+    height: 252px;
+    border: 2px solid #383737;
+    margin: 15px;
+
+}
+
+#imgenes2 {
+    width: 234px;
+    height: 252px;
+    border: 2px solid #383737;
+    margin: 15px;
+
+}
+
+#imgenes3 {
+    width: 343px;
+    height: 184px;
+    border: 2px solid #383737;
+    margin: 20px;
+}
+
+p.text_in {
+    width: 340px;
+    margin: 3px;
+    font-size: large;
+}
+
+.vag4 {
+    display: flex;
+    width: auto;
+    height: 60px;
+    background-color: #F9FFB5;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
