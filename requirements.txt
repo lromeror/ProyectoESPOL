@@ -1,5 +1,8 @@
 pandas
 notebook
+cufflinks
 matplotlib
 seaborn
 plotly
+openpyxl
+dash==2.9.2
