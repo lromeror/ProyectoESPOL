@@ -7,10 +7,11 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapmi
 app = Dash(__name__)
 
 app.layout = html.Div([
+    #Esta es la forma sin especificar el parametro childrn
     html.H1(children='Title of Dash App hey ', style={'textAlign':'center'}),
     dcc.Dropdown(df.country.unique(), 'Canada', id='dropdown-selection'),
     dcc.Graph(id='graph-content'),
-    html.H2(id='nombre')
+    html.H2(id='ProbandoDASh')
     ])
 
 
@@ -21,13 +22,14 @@ app.layout = html.Div([
 
 @callback(#Es un decorador
     Output('graph-content', 'figure'),
-    Output('nombre','children'),
+    Output('ProbandoDASh','children'),
     Input('dropdown-selection', 'value')#Deleccion del dropdown
 )
-def update_graph(value):
+
+def fuctionGraph(value):
     
     dff = df[df.country==value]
-    return px.line(dff, x='year', y='pop')
+    return px.line(dff, x='year', y='pop'),value
 
 if __name__ == '__main__':
     app.run_server(debug=True)
