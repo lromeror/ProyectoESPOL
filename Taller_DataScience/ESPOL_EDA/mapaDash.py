@@ -19,6 +19,7 @@ dic_ubi={
     '3K':[-2.15122, -79.95424], 
 }
 def converEntero(df,fea):
+    
     con=[]
     for s in df[fea]:
         s=s.split(',')
@@ -53,7 +54,6 @@ def normalizar_lat(df,bloque,lat):
         else:
             cont=cont+0.0000009
             modiCor.append(lo-cont)
-    
     df[lat+'2']=modiCor
 
 def normalizar_lon(df,bloque,lon):
